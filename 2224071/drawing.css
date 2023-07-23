@@ -1,95 +1,167 @@
-body,html{
-    height: 100%;
+/* General Styles */
+
+*{
+    box-sizing: border-box;
+  }
+ #flexbox{
+   display:flex;
+   background:#ddd;
+   width: 100%;
+   height:auto;
+   padding:10px;
+ }
+ .box-item{
+   background:rgb(255, 255, 255);
+   text-align: center;
+   padding:15px 40px;
+   border:5px solid #ddd;
+ } 
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-
-#container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-nav{
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Top Image Styles */
+  
+  #top img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Navigation Styles */
+  
+  nav {
+    text-align: center;
     background-color: #000000;
-    
+    padding: 10px 0;
+  }
+  
+  #menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menu li {
+    display: inline;
+    margin-right: 20px;
+    color: #000000;
+    background-color: black;
+  }
+  
+
+  #menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fffbfb;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  #menu li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  
+  /* Middle Content Styles */
+  
+  #container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #middle {
+    text-align: center;
+    color: #000000;
+    background: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Bottom Content Styles */
+  
+  
+  #bottom {
+    color: #ffffff;
+    background: #000000;
+    padding: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media screen and (max-width: 767px) {
+    /* Styles for smartphones and small screens */
+    #menu li {
+      display: block;
+      margin: 10px 0;
     }
-    
-    ul{
-        list-style-type: none;
-        padding-left: 0;
+  
+    #bottom {
+      font-size: 18px;
     }
+  }
+  
+  /* ... Your other existing CSS styles ... */
+  
+  .contentA,.contentB{
+    width: 50%;
+    height: 100px;
+   }
+
+  .contentA{
+    text-align: center;
+    float: left;
+   }
     
-    li{
-        padding: 20px;
-        margin:auto
-    }
-    
-    head{
-        background-color: #000000;
-        width: 1280px;
-    }
-    
-    
-    body{
-        text-align: center;
-    }
-    
-    div#center{
-        width: 1280px;
-        height: 1980px;
-        text-align: left;
-        background: #ffffff;
-        margin: auto;
-    }
-    
-    .flex{
-        display: flex;
-        justify-content: center;
-    }
-    
-    #menu{
-        color: #ffffff;
-        font-size: 24px;
-    }
-    
-    
-    #top{
-       color:#000000;
-       width:auto;
-       height:auto;
-       background:#000000;
-       margin: 0 auto;
-    }
-    
-    #middle{
-       color:#000000;
-       width:900px;
-       background:#ffffff;
-    }
-    
-    #left{
-       width:200px;
-       background:#556b2f;
-       float:left;
-    }
-    
-    #right{
-       width:700px;
-       background:#5f9ea0;
-       float:right
-    }
-    
-    
-    #bottom{
-       color:#8b0000;
-       width:900px;
-       height:100px;
-       background:#ffffff;
-       clear:both;
-    }
-    
-    a{
-        color: #ffffff;
-        text-decoration: none;
-    }
+   .contentB{
+    text-align: center;
+    float: right;
+   }
+
+  /* ... Your existing CSS styles ... */
+
+
+  
+  .contentC {
+    clear: both;
+    text-align: center;
+  }
+  
+  .contentC img {
+    width: 20%; /* Adjust the width as needed */
+    height: auto;
+    margin: 10px; /* Adjust the margin as needed */
+    float: left;
+  }
+
+  /* トップへ戻るボタン */
+.page_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    transition: 0.3s0;
+  }
+  
+  /* マウスオーバー時 */
+  .page_top_btn:hover {
+    background: rgb(255, 0, 0, 0.8);
+    color: rgb(255, 255, 255, 0.8);
+  }
+
+  /* CSSコード */
+html{
+    scroll-behavior: smooth;
+  }
